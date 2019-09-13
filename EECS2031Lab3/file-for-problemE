@@ -1,0 +1,17 @@
+1.for breakpoint1:
+	'display mainA and mainB' shows 1 and 2000
+
+2.for breakpoint2:
+	'display x and y' shows 1 and 2000
+	'display mainA and mainB' shows "No symbol "mainA" and "mainB" in current context."
+	It's because value of mainA and mainB didnt change outside function swap().
+
+3.for breakpoint3:
+	'display x and y' shows 2000 and 1
+	They have swapped.
+
+4.for breakpoint4:
+	'display mainA and mainB' shows 1 and 2000
+	They are not swapped.
+	'display x and y' shows "no symbol "x" and "y" in current context"
+	It's because x and y just exist in function swap().
